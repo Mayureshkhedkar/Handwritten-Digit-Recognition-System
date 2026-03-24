@@ -32,7 +32,7 @@ def preprocess_image(image):
 
     return image
 
-@app.route("/", methods=["POST"])
+@app.route("/", methods=["GET", "POST"])
 def index():
     prediction = None
 
