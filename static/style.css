@@ -1,4 +1,4 @@
-/* style.css for Handwritten Digit Recognition (CNN) */
+/* style.css for Handwritten Digit Recognition (CNN)
 
 * {
     margin: 0;
@@ -86,20 +86,163 @@ button:hover {
     font-size: 1.8rem;
     margin-bottom: 10px;
 } */
-h2 {
+/* h2 {
     color: #ac28c9;
     padding: 10px;
     border-radius: 1px;
-}
+} */
 
 /* Responsive design */
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     h1 {
         font-size: 2rem;
     }
     
     #form {
         padding: 20px;
+        min-width: 280px;
+    }
+} */
+
+/* style.css for Handwritten Digit Recognition (CNN) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #5f6dfc 0%, #9b59b6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    padding: 20px;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.7rem;
+    margin-bottom: 35px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+
+/* FORM CARD */
+#form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    min-width: 320px;
+    transition: transform 0.3s ease;
+}
+
+#form:hover {
+    transform: translateY(-5px);
+}
+
+/* FILE INPUT */
+input[type="file"] {
+    padding: 14px;
+    border: 2px dashed rgba(255,255,255,0.6);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.2);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+input[type="file"]::file-selector-button {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="file"]:hover {
+    border-color: white;
+    background: rgba(255,255,255,0.3);
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* RESULT CARD */
+.container {
+    margin-top: 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    min-width: 320px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* RESULT TEXT */
+h2 {
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    #form {
+        padding: 25px;
+        min-width: 280px;
+    }
+
+    .container {
         min-width: 280px;
     }
 }
