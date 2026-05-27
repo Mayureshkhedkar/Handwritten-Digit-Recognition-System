@@ -111,3 +111,134 @@ Handwritten-Digit-Recognition/
 │   └── style.css
 ├── README.md
 └── requirements.txt
+
+```
+---
+## Installation and Execution Steps
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/handwritten-digit-recognition.git
+```
+
+---
+
+### Step 2: Navigate to the Project Directory
+
+```bash
+cd handwritten-digit-recognition
+```
+
+---
+
+### Step 3: Install Required Libraries
+
+```bash
+pip install flask flask-cors tensorflow pillow numpy
+```
+
+---
+
+### Step 4: Ensure Model File Exists
+
+Place the trained model file:
+
+```bash
+10epochs.h5
+```
+
+inside the project root directory.
+
+---
+
+### Step 5: Run the Flask Application
+
+```bash
+python app.py
+```
+
+---
+
+### Step 6: Open the Application in Browser
+
+Open your browser and navigate to:
+
+```bash
+http://127.0.0.1:5000
+```
+---
+## How the System Works
+
+1. User uploads a handwritten digit image through the web interface.
+2. Flask backend receives the uploaded image.
+3. Image preprocessing is applied:
+   - Convert image to grayscale
+   - Resize image to 28×28 pixels
+   - Invert image colors
+   - Normalize pixel values
+4. The processed image is passed to the trained CNN model.
+5. The CNN model predicts the handwritten digit.
+6. The prediction result is displayed on the webpage.
+
+---
+
+## Screenshots / Output
+
+### Home Page
+- Upload image interface
+- Predict button
+- Responsive UI design
+
+### Prediction Output
+- Displays predicted digit
+- Dynamic result rendering using Flask and Jinja2
+
+Add your screenshots inside a `screenshots/` folder.
+
+Example:
+
+```md
+![Home Page](screenshots/homepage.png)
+
+![Prediction Result](screenshots/result.png)
+```
+
+---
+
+## Future Improvements
+
+- Real-time drawing canvas input
+- Mobile application integration
+- Multi-digit recognition
+- Cloud deployment
+- Prediction history logging
+- Improved preprocessing techniques
+- Advanced CNN architectures
+
+---
+
+## Team Members
+
+### Developer
+**Mayuresh Khedkar**  
+EN23CS301608
+
+### Guided By
+- Dr. Garima Silakari Tukra
+- Dr. Sheetal Bawane
+
+Department of Computer Science & Engineering  
+Medi-Caps University, Indore
+
+---
+
+## Conclusion
+
+This project demonstrates the practical implementation of a CNN-based handwritten digit recognition system using deep learning and Flask deployment. The system successfully integrates model training, preprocessing, backend development, and frontend design into a complete end-to-end machine learning application.
+
+---
+
+## License
+
+This project is developed for academic and educational purposes.
