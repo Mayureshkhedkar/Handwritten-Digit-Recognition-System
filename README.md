@@ -207,7 +207,6 @@ http://127.0.0.1:5000
 
 ### Prediction Output
 - Displays predicted digit
-- Dynamic result rendering using Flask and Jinja2
 
 Added screenshots inside the `screenshots/` folder.
 
