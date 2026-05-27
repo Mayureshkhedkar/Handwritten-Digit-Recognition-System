@@ -103,15 +103,30 @@ The CNN model contains:
 ```bash
 Handwritten-Digit-Recognition/
 │
-├── app.py
-├── 10epochs.h5
-├── templates/
-│   └── index.html
+├── (.ipynb)file/
+│   ├── CNN_(8,10,11,12 epochs).ipynb
+│   └── CNN_highepochs_(15epochs).ipynb
+│
+├── screenshots/
+│   ├── homepage.png
+│   ├── result.png
+│   └── upload_image.png
+│
 ├── static/
 │   └── style.css
+│
+├── templates/
+│   └── index.html
+│
+├── 8epochs.h5
+├── 10epochs.h5
+├── 11epochs.h5
+├── 15epochs.h5
+├── digit_model.h5
+│
+├── app.py
 ├── README.md
 └── requirements.txt
-
 ```
 ---
 ## Installation and Execution Steps
@@ -119,7 +134,7 @@ Handwritten-Digit-Recognition/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/handwritten-digit-recognition.git
+https://github.com/Mayureshkhedkar/Handwritten-Digit-Recognition-System.git
 ```
 
 ---
@@ -194,12 +209,14 @@ http://127.0.0.1:5000
 - Displays predicted digit
 - Dynamic result rendering using Flask and Jinja2
 
-Add your screenshots inside a `screenshots/` folder.
+Added screenshots inside the `screenshots/` folder.
 
 Example:
 
 ```md
 ![Home Page](screenshots/homepage.png)
+
+![Prediction Result](screenshots/uplaod_image.png)
 
 ![Prediction Result](screenshots/result.png)
 ```
