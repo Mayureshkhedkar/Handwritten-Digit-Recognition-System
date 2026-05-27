@@ -44,7 +44,7 @@ The final deployed model was trained for **10 epochs**, achieving:
 
 ## Development Tools
 - Visual Studio Code (VS Code)
-- Jupyter Notebook
+- Google Collab
 
 ---
 
