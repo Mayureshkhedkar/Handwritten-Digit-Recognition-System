@@ -1,6 +1,12 @@
-flask
-tensorflow
+#flask
+#tensorflow
+#numpy
+#pillow
+#gunicorn
+#opencv-python
+Flask
+flask-cors
+tensorflow-cpu
 numpy
-pillow
+Pillow
 gunicorn
-opencv-python
